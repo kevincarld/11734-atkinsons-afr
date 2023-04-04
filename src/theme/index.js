@@ -23,14 +23,18 @@ const customTheme = extendTheme({
     mono: "Menlo, monospace",
   },
   colors: {
-    primary: '#3DCD58',
+    primary: '#E9531E',
+    orange: '#E9531E',
+    line: '#DA532A',
+    white: '#FFFFFF',
+    black: '#000000',
     gray: '#F2F2F2',
     link: '#5081FF'
   },
   space: {
-    gutter: '20px',
-    gridcol: '108px',
-    gridmargin: '202px',
+    gutter: '18px',
+    gridcol: '90px',
+    gridmargin: '321px',
     px: '1px',
     spacer: '40px',
     desktop: {
@@ -38,9 +42,9 @@ const customTheme = extendTheme({
     },
   },
   sizes: {
-    gutter: '20px',
-    gridcol: '108px',
-    gridmargin: '202px',
+    gutter: '18px',
+    gridcol: '90px',
+    gridmargin: '321px',
     px: '1px',
     spacer: '40px',
     desktop: {
@@ -51,7 +55,7 @@ const customTheme = extendTheme({
     full: '100%',
     half: '50%',
     container: {
-      desktop: '1516px',
+      desktop: '1278px',
     },
   },
 
