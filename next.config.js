@@ -24,7 +24,7 @@ const nextConfig = {
       siteName: 'Financial Review', // The Sydney Morning Herald, Good Food
       icon: 'afr', // smh, goodfood, nine, afr, traveller
       themeColour: '#E9531E', // hex
-      ogImage: 'tbd',
+      ogImage: 'https://live-native-paid-content.pantheonsite.io/wp-content/uploads/2023/04/11734-Atkinsons-Fragrance-AFR-Social-Share.jpg',
       date: '12-04-23', // e.g 03-12-23
       year: '2023' // e.g 2023
     },
