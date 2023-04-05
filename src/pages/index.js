@@ -15,16 +15,16 @@ import Footer from "components/Footer"
 export default function Home() {
   return (
     <Layout>
-      {/* <Hero />
+      {/* <Hero /> */}
       <Intro />
-      <Almost />
-      <TwoColVideo />
-      <Jar />
-      <Tale />
-      <Video />
-      <Road />
-      <PreFooter />
-      <Footer /> */}
+      {/* <Almost /> */}
+      {/* <TwoColVideo /> */}
+      {/* <Jar /> */}
+      {/* <Tale /> */}
+      {/* <Video /> */}
+      {/* <Road /> */}
+      {/* <PreFooter /> */}
+      {/* <Footer /> */}
     </Layout>
   )
 }
