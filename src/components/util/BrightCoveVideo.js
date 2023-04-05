@@ -4,7 +4,7 @@ import { Box } from '@chakra-ui/react';
 //
 import { useInView } from "framer-motion"
 
-export default function BrightCoveVideo({script, dataPlayer, dataVideoId, ...rest}) {
+export default function BrightCoveVideo({script, dataPlayer, dataVideoId, playerOptions, square=false, ...rest}) {
 
   const ref = React.useRef(null)
   const isInView = useInView(ref, { margin: '0px 0px -150px 0px'})
@@ -55,11 +55,6 @@ export default function BrightCoveVideo({script, dataPlayer, dataVideoId, ...res
     <Box
       class="vid-container"
       ref={ref}
-      sx={{
-        'video-js.video-js.vjs-fluid:not(.vjs-audio-only-mode)': {
-          paddingTop: '56.25%',
-        },
-      }}
       {...rest}
     >
       <video-js
@@ -69,9 +64,8 @@ export default function BrightCoveVideo({script, dataPlayer, dataVideoId, ...res
         data-video-id={dataVideoId}
         data-playlist-id=""
         data-application-id=""
-        class="vjs-fluid"
-        loop
-        muted
+        class={square ? 'vjs-1-1' : 'vjs-fluid'}
+        {...playerOptions}
       />
     </Box>
   )

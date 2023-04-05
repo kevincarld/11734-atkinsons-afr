@@ -7,6 +7,7 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
+import BrightCoveVideo from './util/BrightCoveVideo'
 
 export default function TwoColVideo() {
 
@@ -23,8 +24,20 @@ export default function TwoColVideo() {
             }
           }}
         >
-          <Box pos='relative' px={{base: '20px'}}>
-            <Img dimension='648x648' mock='video-1' />
+          <Box pos='relative' px={{base: '20px'}} mr={{wide: '-100px'}}>
+            <Box w='full' maxW='648px' >
+              <BrightCoveVideo
+                script={'https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js'}
+                dataPlayer={'wIpGq2Kd0p'}
+                dataVideoId={'6323983357112'}
+                square={true}
+                playerOptions={{
+                  loop:true,
+                  mute:true,
+                  // controls: true,
+                }}
+              />
+            </Box>
           </Box>
         </GridItem>
 
