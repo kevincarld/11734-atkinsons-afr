@@ -1,14 +1,30 @@
 
 import Layout from "components/util/Layout"
 // chakra
-import { Heading, Button } from "@chakra-ui/react"
-//
+import Hero from "components/Hero"
+import Intro from "components/Intro"
+import Almost from "components/Almost"
+import TwoColVideo from "components/TwoColVideo"
+import Jar from "components/Jar"
+import Tale from "components/Tale"
+import Video from "components/Video"
+import Road from "components/Road"
+import PreFooter from "components/PreFooter"
+import Footer from "components/Footer"
 
 export default function Home() {
   return (
     <Layout>
-      <Heading as="h1">Hello World</Heading>
-      <Button>Button</Button>
+      {/* <Hero />
+      <Intro />
+      <Almost />
+      <TwoColVideo />
+      <Jar />
+      <Tale />
+      <Video />
+      <Road />
+      <PreFooter />
+      <Footer /> */}
     </Layout>
   )
 }
