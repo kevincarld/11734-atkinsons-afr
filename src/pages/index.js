@@ -17,11 +17,11 @@ import { Box } from "@chakra-ui/react"
 export default function Home() {
   return (
     <Layout>
-      <Box bg='black'>
+      <Box bg='black' color='white' overflow='hidden'>
         {/* <Hero /> */}
         <Intro />
         <Almost />
-        {/* <TwoColVideo /> */}
+        <TwoColVideo />
         {/* <Jar /> */}
         {/* <Tale /> */}
         {/* <Video /> */}
