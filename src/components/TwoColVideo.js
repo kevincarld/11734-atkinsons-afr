@@ -34,8 +34,10 @@ export default function TwoColVideo() {
                 playerOptions={{
                   loop:true,
                   mute:true,
+                  autoplay:true,
                   // controls: true,
                 }}
+
               />
             </Box>
           </Box>

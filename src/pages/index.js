@@ -24,8 +24,9 @@ export default function Home() {
         <TwoColVideo />
         <Jar />
         {/* <Tale /> */}
-        {/* <Video /> */}
-        {/* <Road /> */}
+
+        <Video />
+        <Road />
         {/* <PreFooter /> */}
         {/* <Footer /> */}
       </Box>

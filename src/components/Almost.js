@@ -24,7 +24,7 @@ export default function Almost() {
         <Flex pt={{base: '80px', lg: '120px'}} flexDir='column' alignItems={{base: 'center', d: 'flex-start'}}>
           <Flex>
             <Text textStyle={'body'} {...texts.big} as='span'>A</Text>
-            <PreLine display={{base: 'block', d:'none'}} textStyle={'body'}>
+            <PreLine mb='0!important' display={{base: 'block', d:'none'}} textStyle={'body'}>
               {`lmost 200 years before
               fragrance brands began enlisting
               celebrities to front each new`}
@@ -51,7 +51,7 @@ const texts = {
     fontSize: {base: '80px', sm: '100px', d: '120px'},
     lineHeight: {base: '75px', sm: '85px'},
     letterSpacing: {base: '4px', sm: '7px'},
-    ml: {base: '-10px', sm: 0}
+    ml: {base: '-10px', sm: '-6px'}
   }
 }
 
