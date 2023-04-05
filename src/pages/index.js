@@ -12,19 +12,23 @@ import Road from "components/Road"
 import PreFooter from "components/PreFooter"
 import Footer from "components/Footer"
 
+import { Box } from "@chakra-ui/react"
+
 export default function Home() {
   return (
     <Layout>
-      {/* <Hero /> */}
-      <Intro />
-      {/* <Almost /> */}
-      {/* <TwoColVideo /> */}
-      {/* <Jar /> */}
-      {/* <Tale /> */}
-      {/* <Video /> */}
-      {/* <Road /> */}
-      {/* <PreFooter /> */}
-      {/* <Footer /> */}
+      <Box bg='black'>
+        {/* <Hero /> */}
+        <Intro />
+        <Almost />
+        {/* <TwoColVideo /> */}
+        {/* <Jar /> */}
+        {/* <Tale /> */}
+        {/* <Video /> */}
+        {/* <Road /> */}
+        {/* <PreFooter /> */}
+        {/* <Footer /> */}
+      </Box>
     </Layout>
   )
 }

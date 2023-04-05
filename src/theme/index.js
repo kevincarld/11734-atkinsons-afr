@@ -6,7 +6,11 @@ const customTheme = extendTheme({
     Button
   },
   textStyles: {
-
+    body: {
+      fontWeight: 'light',
+      fontSize: {base: '16px', sm: '18px', d:'20px'},
+      lineHeight: {base: '24px', sm: '26px', d:'30px'},
+    }
   },
   breakpoints : {
     sm: '360px',
