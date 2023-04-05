@@ -22,7 +22,7 @@ export default function Home() {
         <Intro />
         <Almost />
         <TwoColVideo />
-        {/* <Jar /> */}
+        <Jar />
         {/* <Tale /> */}
         {/* <Video /> */}
         {/* <Road /> */}
