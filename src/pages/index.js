@@ -28,7 +28,7 @@ export default function Home() {
         <Video />
         <Road />
         <PreFooter />
-        {/* <Footer /> */}
+        <Footer />
       </Box>
     </Layout>
   )

@@ -11,16 +11,26 @@ import { motion } from 'framer-motion'
 export default function Footer() {
 
   return (
-    <Box>
-      <h1>I am Footer</h1>
-    </Box>
+    <Container px={{base:'20px', wide: 0}}>
+        <Box as='hr' borderColor='primary' w='full'  />
+
+      <Text maxW='584px' mx='auto' p={{base: '80px 0 200px', lg: '124px 0 275px'}} {...texts.content}>
+        Atkinsons James 100ml EDP is available from Myer Sydney and Melbourne City stores and at
+        <NineLink color='white' _hover={{textDecor: 'underline'}}> myer.com.au</NineLink>
+      </Text>
+    </Container>
   )
 }
 
 // font styles
 const texts = {
-  xx: {
-
+  content: {
+    color: 'primary',
+    textAlign: 'center',
+    fontFamily: 'heading',
+    fontSize: {base: '16px', sm: '18px', lg:'24px'},
+    letterSpacing: {base: '0.18px'},
+    lineHeight: {base: '24px', sm: '26px', lg:'36px'},
   }
 }
 
