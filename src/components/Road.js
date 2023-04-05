@@ -13,14 +13,10 @@ export default function Road() {
   return (
     <Container pt={{base: '28px', lg: '68px'}}>
       <Grid
-        p={{base: '70px 20px 76px'}}
+        p={{base: '70px 20px 0px'}}
         templateColumns={{lg: '1fr 1fr', }}
         gap={{lg: '40px'}}
       >
-        <Figure maxW={{base: '260px', lg: '375px'}} mx='auto' mr={{d:'0'}} ml={{d:'108px'}}>
-          <Img w='full' dimension='375x538' src='./images/road-1.png' alt='box of atkinsons james' />
-        </Figure>
-
         <GridItem>
           <Flex pt={{d: '30px'}} flexDir='column' alignItems={{base: 'center', lg: 'flex-start'}} maxW={{lg: '509px'}}>
             <PreLine as='h2' {...texts.heading}>
@@ -48,6 +44,10 @@ export default function Road() {
             <Text display={{base: 'none', d:'block'}} textStyle={'body'} maxW={{base: '503px'}}>legacy built on flouting tradition and doing things differently.</Text>
           </Flex>
         </GridItem>
+
+        <Figure order={{lg: -1}} maxW={{base: '260px', lg: '375px'}} mx='auto' mr={{d:'0'}} ml={{d:'108px'}}>
+          <Img w='full' dimension='375x538' src='./images/road-1.png' alt='box of atkinsons james' />
+        </Figure>
 
       </Grid>
     </Container>
