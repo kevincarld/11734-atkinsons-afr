@@ -7,18 +7,23 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
-
+import FeatureFooter from './util/FeatureFooter'
 export default function Footer() {
 
   return (
-    <Container px={{base:'20px', wide: 0}}>
+    <Box pos='relative'>
+      <Container px={{base:'20px', wide: 0}}>
         <Box as='hr' borderColor='primary' w='full'  />
 
-      <Text maxW='584px' mx='auto' p={{base: '80px 0 200px', lg: '124px 0 275px'}} {...texts.content}>
-        Atkinsons James 100ml EDP is available from Myer Sydney and Melbourne City stores and at
-        <NineLink color='white' _hover={{textDecor: 'underline'}}> myer.com.au</NineLink>
-      </Text>
-    </Container>
+        <Text maxW='584px' mx='auto' p={{base: '80px 0 220px', lg: '124px 0 275px'}} {...texts.content}>
+          Atkinsons James 100ml EDP is available from Myer Sydney and Melbourne City stores and at
+          <NineLink color='white' _hover={{textDecor: 'underline'}}> myer.com.au</NineLink>
+        </Text>
+
+      </Container>
+
+      <FeatureFooter />
+    </Box>
   )
 }
 
