@@ -8,7 +8,7 @@ export default function MastheadProvider({children}) {
     headerConfig: {
       logoColor: "white",
       textColor: "white",
-      bgColor: "#0A1633",
+      bgColor: "black",
       css: {
         boxShadow: "0px 3px 6px 0px rgba(0, 0, 0, 0.16)",
         position: 'fixed',
@@ -19,7 +19,7 @@ export default function MastheadProvider({children}) {
     footerConfig: {
       logoColor: "white",
       textColor: "white",
-      bgColor: "#0A1633",
+      bgColor: "black",
     },
   }
 

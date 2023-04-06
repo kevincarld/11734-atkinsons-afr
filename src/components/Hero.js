@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 export default function Hero() {
 
   return (
-    <Box>
+    <Box pt='54px'>
       <h1>I am Hero</h1>
     </Box>
   )
