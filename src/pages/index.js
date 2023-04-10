@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Layout>
       <Box bg='black' color='white' overflow='hidden'>
-        {/* <Hero /> */}
+        <Hero />
         <Intro />
         <Almost />
         <TwoColVideo />

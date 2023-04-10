@@ -82,7 +82,7 @@ const MotionLayout = ({ children }) => {
   return (
     <MastheadProvider>
       <ParallaxProvider>
-        <ScrollerMotion disabled={!isDesktop}>
+        <ScrollerMotion disabled={true}>
           {children}
         </ScrollerMotion>
       </ParallaxProvider>

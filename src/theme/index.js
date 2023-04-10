@@ -22,7 +22,9 @@ const customTheme = extendTheme({
   },
   fonts: {
     body: "Fact, system-ui, sans-serif",
+    fact: "Fact, system-ui, sans-serif",
     heading: "Canela, Georgia, serif",
+    canela: "Canela, Georgia, serif",
     expanded: "Fact Expanded, Fact, system-ui, sans-serif",
     mono: "Menlo, monospace",
   },
