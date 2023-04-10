@@ -24,6 +24,16 @@ export default function Hero() {
             autoplay: true,
           }}
         />
+
+      <Box
+        sx={{
+          pos: 'absolute',
+          inset: 'auto 0 0 0',
+          width: '100%',
+          height: { base: '30px', md: '80px'},
+          bg: 'linear-gradient(to bottom, transparent 0%, black 100%)'
+        }}
+      />
       </Box>
 
       <Center pos='absolute' inset='0' pt={{base: '180px', md: '40px'}}>
