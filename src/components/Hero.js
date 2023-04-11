@@ -8,12 +8,14 @@ import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
 import BrightCoveVideo from './util/BrightCoveVideo'
-
+import FeatureHeader from './util/FeatureHeader'
 export default function Hero() {
 
   return (
-    <Box pos='relative' pt='54px' mb={{base: '50%', md: '0'}}>
-      <Box pos='relative' transform={{base: 'scale(3)', md: 'none'}} transformOrigin={'center'}>
+    <Box pos='relative' pt='54px' mb={{base: '60%', md: '0'}} mt={{md: '-54px'}}>
+      <FeatureHeader href='' />
+
+      <Box pos='relative' transform={{base: 'scale(3.3)', md: 'none'}} transformOrigin={'center'}>
         <BrightCoveVideo
           script={'https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js'}
           dataPlayer={'wIpGq2Kd0p'}
@@ -36,7 +38,7 @@ export default function Hero() {
       />
       </Box>
 
-      <Center pos='absolute' inset='0' pt={{base: '180px', md: '40px'}}>
+      <Center pos='absolute' inset='0' pt={{base: '260px', md: '40px'}}>
         <Box textAlign={{base: 'center', md: 'left'}}>
           <Text {...texts.scent} mb={{base: '15px!important', d:'25px!important' }}>On the scent:</Text>
           <PreLine display={{base: 'block', md: 'none'}} as='h1' {...texts.title}>
@@ -51,7 +53,7 @@ export default function Hero() {
         </Box>
       </Center>
 
-      <Center pos='absolute' inset='0' pt={{base: '119%', md: '0'}} pb={{md: '40px'}} alignItems='flex-end'>
+      <Center pos='absolute' inset='0' pt={{base: '135%', md: '0'}} pb={{md: '40px'}} alignItems='flex-end'>
         <Box textAlign={{base: 'center'}} sx={{ 'svg' : { maxW: {base: '36px', wide: 'none'} }}}>
           <svg width="58" height="58" viewBox="0 0 58 58">
             <g id="Group_5921" data-name="Group 5921" transform="translate(1870 -1376) rotate(90)">
