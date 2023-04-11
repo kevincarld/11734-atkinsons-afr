@@ -7,7 +7,7 @@ export default function FeatureHeader({svg, href, ...rest}) {
   return (
     <Box
       display='flex' flexDir='column' alignItems='center' justifyContent="center"
-      pos='absolute' top={{base: '10px', md: '70px'}} left='0' right='0' zIndex={30}
+      pos='absolute' top={{base: '70px'}} left='0' right='0' zIndex={30}
       {...rest}
     >
       <Text sx={{

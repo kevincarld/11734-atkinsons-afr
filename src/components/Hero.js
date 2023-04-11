@@ -18,7 +18,7 @@ export default function Hero() {
     }
   };
   return (
-    <Box pos='relative' pt='54px' mb={{base: '60%', md: '0'}} mt={{md: '-54px'}}>
+    <Box pos='relative' pt='54px' mb={{base: '60%', md: '0'}} >
       <FeatureHeader href='' />
 
       <Box pos='relative' transform={{base: 'scale(3.3)', md: 'none'}} transformOrigin={'center'}>

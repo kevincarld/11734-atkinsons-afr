@@ -46,7 +46,7 @@ export default function MastheadProvider({children}) {
   if(!activateMasthead) return children
 
   return (
-    <Box as='main' mt={{base: '54px'}}>
+    <Box as='main' bg='black'>
       <header></header>
 
         {children}
