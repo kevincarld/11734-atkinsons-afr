@@ -25,7 +25,23 @@ export default function TwoColVideo() {
             }
           }}
         >
-          <Box pos='relative' px={{base: '20px'}} mr={{wide: '-100px'}}>
+          <Box as={motion.div} pos='relative' px={{base: '20px'}} mr={{wide: '-100px'}}
+            initial={{
+              opacity: 0,
+              x: 100,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                opacity: { duration: 0.8 },
+                x: { duration: 1.6 },
+              }
+            }}
+            viewport={{
+              margin: '0px 0px -200px 0px'
+            }}
+          >
             <Box w='full' maxW='648px' >
               <BrightCoveVideo
                 script={'https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js'}

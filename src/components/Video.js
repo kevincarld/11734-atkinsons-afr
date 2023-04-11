@@ -23,7 +23,23 @@ export default function Video() {
             }
           }}
         >
-          <Box pos='relative' >
+          <Box as={motion.div} pos='relative'
+            initial={{
+              opacity: 0,
+              x: 100,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                opacity: { duration: 0.8 },
+                x: { duration: 1.6 },
+              }
+            }}
+            viewport={{
+              margin: '0px 0px -150px 0px'
+            }}
+          >
             <BrightCoveVideo
               script={'https://players.brightcove.net/6165065566001/wIpGq2Kd0p_default/index.min.js'}
               dataPlayer={'wIpGq2Kd0p'}
