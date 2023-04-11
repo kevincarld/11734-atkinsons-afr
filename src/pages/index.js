@@ -19,7 +19,10 @@ export default function Home() {
     <Layout>
       <Box bg='black' color='white' overflow='hidden'>
         <Hero />
-        <Intro />
+
+        <Box id='intro'>
+          <Intro />
+        </Box>
         <Almost />
         <TwoColVideo />
         <Jar />
