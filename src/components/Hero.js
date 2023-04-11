@@ -14,9 +14,21 @@ import Mover from './util/Mover'
 export default function Hero() {
   const handleClickScroll = (e) => {
     e.preventDefault()
+    function findPosition(obj) {
+      var currenttop = 0;
+      if (obj.offsetParent) {
+        do {
+          currenttop += obj.offsetTop;
+        } while ((obj = obj.offsetParent));
+        return [currenttop];
+      }
+    }
     const element = document.getElementById('intro');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo({
+        top: findPosition(document.getElementById("intro")),
+        behavior: 'smooth'
+      } )
     }
   };
   return (
@@ -64,7 +76,7 @@ export default function Hero() {
       </Center>
 
       <Center pos='absolute' inset='0' pt={{base: '135%', md: '0'}} pb={{md: '40px'}} alignItems='flex-end'>
-        <Box  textAlign={{base: 'center'}} sx={{ 'svg' : { maxW: {base: '36px', wide: 'none'} }}} >
+        <Box _hover={{cursor: 'pointer'}} textAlign={{base: 'center'}} sx={{ 'svg' : { maxW: {base: '36px', wide: 'none'} }}} onClick={handleClickScroll}>
           <svg width="58" height="58" viewBox="0 0 58 58">
             <g id="Group_5921" data-name="Group 5921" transform="translate(1870 -1376) rotate(90)">
               <g id="Ellipse_82" data-name="Ellipse 82" transform="translate(1376 1812)" fill="none" stroke="#fff" stroke-width="1">
