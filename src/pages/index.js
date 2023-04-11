@@ -18,20 +18,21 @@ export default function Home() {
   return (
     <Layout>
       <Box bg='black' color='white' overflow='hidden'>
-        <Hero />
+        {/* <Hero />
 
         <Box id='intro'>
           <Intro />
         </Box>
+
         <Almost />
         <TwoColVideo />
-        <Jar />
-        {/* <Tale /> */}
+        <Jar /> */}
+        <Tale />
 
-        <Video />
+        {/* <Video />
         <Road />
-        <PreFooter />
-        <Footer />
+        <PreFooter /> */}
+        {/* <Footer /> */}
       </Box>
     </Layout>
   )

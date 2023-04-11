@@ -5,6 +5,7 @@ import Script from 'next/script';
 import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import 'swiper/css/scrollbar';
 
 import AppMeta from 'components/util/AppMeta';
 import MastheadProvider from 'components/util/MastheadProvider';

@@ -31,8 +31,8 @@ const nextConfig = {
     },
     jobCode: '11734-atkinsons-afr', // used for nine ga scripts
     guidelines: false, // shows or hides layout guideline bars
-    activateMasthead: true, // shows or hides masthead
-    mastheadOverride: 'afr', // overrides masthead that's pulling from hostname: e.g honey,style,travel,kitchen,you,parenting,coach,pets,celebrity
+    activateMasthead: false, // shows or hides masthead
+    mastheadOverride: false, // overrides masthead that's pulling from hostname: e.g honey,style,travel,kitchen,you,parenting,coach,pets,celebrity
   }
 }
 
