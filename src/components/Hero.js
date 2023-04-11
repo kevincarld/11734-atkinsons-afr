@@ -52,7 +52,7 @@ export default function Hero() {
           pos: 'absolute',
           inset: 'auto 0 0 0',
           width: '100%',
-          height: { base: '30px', md: '80px'},
+          height: { base: '40px', md: '80px'},
           bg: 'linear-gradient(to bottom, transparent 0%, black 100%)'
         }}
       />
