@@ -17,12 +17,12 @@ export default function Footer() {
 
         <Text maxW='584px' mx='auto' p={{base: '80px 0 220px', lg: '124px 0 275px'}} {...texts.content}>
           Atkinsons James 100ml EDP is available from Myer Sydney and Melbourne City stores and at
-          <NineLink color='white' _hover={{textDecor: 'underline'}}> myer.com.au</NineLink>
+          <NineLink color='white' href='https://www.myer.com.au/p/atkinsons-london-1799-james-edp-100ml' _hover={{textDecor: 'underline'}}> myer.com.au</NineLink>
         </Text>
 
       </Container>
 
-      <FeatureFooter />
+      <FeatureFooter href='https://www.atkinsons1799.com/en_eu'/>
     </Box>
   )
 }
