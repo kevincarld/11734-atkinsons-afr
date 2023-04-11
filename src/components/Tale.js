@@ -42,7 +42,7 @@ export default function Tale() {
         },
         1600: {
           slidesPerView: 2.4,
-          centeredSlides: false,
+          centeredSlides: true,
         },
       },
       modules: [Autoplay, Navigation, Scrollbar, ]
@@ -54,14 +54,35 @@ export default function Tale() {
   }, [])
 
   return (
-    <Box borderLeft={{base: '10px solid #E9531E', d: '200px solid #E9531E'}} bg='#0D0D0D'>
+    <Box pos='relative' mb={{base: '120px', wide:'220px'}} borderLeft={{base: '10px solid #E9531E', d: '200px solid #E9531E'}} bg='#0D0D0D'
+      sx={{
+        '&:before': {
+          display: {base: 'none', d:'block'},
+          content: '""',
+          pos:'absolute',
+          bg: 'linear-gradient(to right, black 0%, transparent 100%)',
+          w: {d:'103px', wide: '140px'},
+          inset: {d: '0 auto 0 0'},
+          zIndex: 123,
+        },
+        '&:after': {
+          display: {base: 'none', wide:'block'},
+          content: '""',
+          pos:'absolute',
+          bg: 'linear-gradient(to left, black 0%, transparent 100%)',
+          w: {wide: '240px'},
+          inset: {d: '0 0 0 auto'},
+          zIndex: 123,
+        }
+      }}
+    >
       <Box p={{base: '80px 20px 30px', d:'120px 0px  60px 190px'}}>
         <Text as='h2' display='inline-block' {...texts.title} borderBottom='1px solid #DA532A' pb={{base: '10px'}} mb={{base: '20px'}} w='full' maxW='560px'>A fragrant tale</Text>
         <Text {...texts.subtitle} maxW='702px'>To better understand what makes James such a fitting accolade to its company founder, take a journey through Atkinsons’ first 100 years.</Text>
       </Box>
 
         <Box px={{base: '10px', d:0}} >
-          <Box ref={slider1Ref} className="swiper-container slider1"  overflow='hidden' pl={{d:'100px'}}>
+          <Box ref={slider1Ref} className="swiper-container slider1"  overflow='hidden' pl={{d:'100px', wide:0}}>
             <Box className="swiper-wrapper" _hover={{cursor: 'grab'}}
               sx={{
                 '&:before': {
@@ -76,7 +97,7 @@ export default function Tale() {
               }}
             >
 
-              <SwiperSlide className='swiper-slide' >
+              <Box as={SwiperSlide} className='swiper-slide' flexBasis={{d:'690px'}}>
                 <Grid>
                   <Figure pos='relative'>
                     <Img display={{base: 'block', d: 'none'}} dimension="278x205" fit='contain' mock='slider-1' src='./images/mslider-1.png' />
@@ -85,7 +106,7 @@ export default function Tale() {
 
                   <Text pt={{base:"25px"}} {...texts.content} maxW={{base:'256px', d:'352'}} ml={{base: '40px', d:'210px'}}>A 17-year-old James Atkinson leaves his home in England’s north for London, setting up shop at 44 Gerard Street in Soho. His companion, a pet bear, becomes a mascot for the business. </Text>
                 </Grid>
-              </SwiperSlide>
+              </Box>
 
               <SwiperSlide className='swiper-slide' >
                 <Grid>
@@ -154,7 +175,7 @@ export default function Tale() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide' >
-                <Grid>
+                <Grid >
                   <Figure pos='relative'>
                     <Img display={{base: 'block', d: 'none'}} dimension="230x173" fit='contain' mock='slider-1' src='./images/mslider-8.png' />
                     <Img display={{base: 'none', d: 'block'}} dimension="283x220" fit='contain' mock='slider-1' src='./images/slider-8.png' />

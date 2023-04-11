@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Layout>
       <Box bg='black' color='white' overflow='hidden'>
-        {/* <Hero />
+        <Hero />
 
         <Box id='intro'>
           <Intro />
@@ -26,13 +26,13 @@ export default function Home() {
 
         <Almost />
         <TwoColVideo />
-        <Jar /> */}
+        <Jar />
         <Tale />
 
-        {/* <Video />
+        <Video />
         <Road />
-        <PreFooter /> */}
-        {/* <Footer /> */}
+        <PreFooter />
+        <Footer />
       </Box>
     </Layout>
   )
