@@ -7,6 +7,7 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
+import Mover from './util/Mover'
 
 export default function Almost() {
 
@@ -21,23 +22,26 @@ export default function Almost() {
           <Img w='full' dimension='279x513' src='./images/almost-1.png' alt='jar of atkinsons james' />
         </Figure>
 
-        <Flex pt={{base: '80px', lg: '120px'}} flexDir='column' alignItems={{base: 'center', d: 'flex-start'}}>
-          <Flex>
-            <Text textStyle={'body'} {...texts.big} as='span'>A</Text>
-            <PreLine mb='0!important' display={{base: 'block', d:'none'}} textStyle={'body'}>
-              {`lmost 200 years before
-              fragrance brands began enlisting
-              celebrities to front each new`}
-            </PreLine>
-            <PreLine display={{base: 'none', d:'block'}} textStyle={'body'}>
-              {`lmost 200 years before fragrance brands began
-               enlisting celebrities to front each new launch,
-                London perfumer James Atkinson was turning`}
-            </PreLine>
+        <Mover y={[15,-10]}>
+          <Flex pt={{base: '80px', lg: '120px'}} flexDir='column' alignItems={{base: 'center', d: 'flex-start'}}>
+            <Flex>
+              <Text textStyle={'body'} {...texts.big} as='span'>A</Text>
+              <PreLine mb='0!important' display={{base: 'block', d:'none'}} textStyle={'body'}>
+                {`lmost 200 years before
+                fragrance brands began enlisting
+                celebrities to front each new`}
+              </PreLine>
+              <PreLine display={{base: 'none', d:'block'}} textStyle={'body'}>
+                {`lmost 200 years before fragrance brands began
+                enlisting celebrities to front each new launch,
+                  London perfumer James Atkinson was turning`}
+              </PreLine>
+            </Flex>
+            <Text display={{base: 'block', d:'none'}} textStyle={'body'} maxW={{base: '332px'}}>launch, London perfumer James Atkinson was turning heads with a far more eccentric mascot. In 1799, the young Atkinson had recently arrived in London’s Soho from England’s northern counties and was keen to make a name for himself. </Text>
+            <Text display={{base: 'none', d:'block'}} textStyle={'body'} maxW={{base: '503px'}}>heads with a far more eccentric mascot. In 1799, the young Atkinson had recently arrived in London’s Soho from England’s northern counties and was keen to make a name for himself. </Text>
           </Flex>
-          <Text display={{base: 'block', d:'none'}} textStyle={'body'} maxW={{base: '332px'}}>launch, London perfumer James Atkinson was turning heads with a far more eccentric mascot. In 1799, the young Atkinson had recently arrived in London’s Soho from England’s northern counties and was keen to make a name for himself. </Text>
-          <Text display={{base: 'none', d:'block'}} textStyle={'body'} maxW={{base: '503px'}}>heads with a far more eccentric mascot. In 1799, the young Atkinson had recently arrived in London’s Soho from England’s northern counties and was keen to make a name for himself. </Text>
-        </Flex>
+        </Mover>
+
       </Grid>
     </Container>
   )

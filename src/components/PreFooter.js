@@ -7,6 +7,7 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
+import Mover from './util/Mover'
 
 export default function PreFooter() {
 
@@ -26,7 +27,9 @@ export default function PreFooter() {
 
 
         <Figure  mx='auto' >
-          <Img w='full' dimension='784x847' src='./images/prefooter-1.png' alt='jar of atkinsons james with flowers in the background' />
+          <Mover y={[15,-10]}>
+            <Img w='full' dimension='784x847' src='./images/prefooter-1.png' alt='jar of atkinsons james with flowers in the background' />
+          </Mover>
         </Figure>
 
       </Grid>

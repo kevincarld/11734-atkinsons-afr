@@ -8,6 +8,7 @@ import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
 import BrightCoveVideo from './util/BrightCoveVideo'
+import Mover from './util/Mover'
 
 export default function TwoColVideo() {
 
@@ -45,9 +46,11 @@ export default function TwoColVideo() {
 
         <GridItem px={{base: '20px', wide:'0'}} display='flex' alignItems='center'>
           <Box maxW={{lg: '503px'}}>
-            <Text textStyle='body'>He knew his recipes for pomades, balms and fine fragrances were worthy of attention but he needed to spark the imagination of Regency-era London society who flocked into town for the season. And so Atkinson turned to his faithful travelling companion, who’d accompanied him on the journey down from Cumberland.</Text>
-            <Text textStyle='body'>Here comes the twist in this story, for Atkinson’s “companion” was none other than his pet bear. </Text>
-            <Text textStyle='body'>Travelling circuses were all the rage and the bear became an instant hit with the fashionable and famously fickle customers of London, who daringly visited Atkinson’s Soho boutique for a glimpse of the animal.</Text>
+            <Mover y={[10,-20]}>
+              <Text textStyle='body'>He knew his recipes for pomades, balms and fine fragrances were worthy of attention but he needed to spark the imagination of Regency-era London society who flocked into town for the season. And so Atkinson turned to his faithful travelling companion, who’d accompanied him on the journey down from Cumberland.</Text>
+              <Text textStyle='body'>Here comes the twist in this story, for Atkinson’s “companion” was none other than his pet bear. </Text>
+              <Text textStyle='body'>Travelling circuses were all the rage and the bear became an instant hit with the fashionable and famously fickle customers of London, who daringly visited Atkinson’s Soho boutique for a glimpse of the animal.</Text>
+            </Mover>
           </Box>
         </GridItem>
       </Grid>

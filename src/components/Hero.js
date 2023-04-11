@@ -9,6 +9,8 @@ import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
 import BrightCoveVideo from './util/BrightCoveVideo'
 import FeatureHeader from './util/FeatureHeader'
+import Mover from './util/Mover'
+
 export default function Hero() {
   const handleClickScroll = (e) => {
     e.preventDefault()
@@ -46,16 +48,18 @@ export default function Hero() {
 
       <Center pos='absolute' inset='0' pt={{base: '260px', md: '40px'}}>
         <Box textAlign={{base: 'center', md: 'left'}}>
-          <Text {...texts.scent} mb={{base: '15px!important', d:'25px!important' }}>On the scent:</Text>
-          <PreLine display={{base: 'block', md: 'none'}} as='h1' {...texts.title}>
-            {`Uncover
-            adventure,
-            with James `}
-          </PreLine>
-          <PreLine display={{base: 'none', md: 'block'}} as='h1' {...texts.title}>
-            {`Uncover adventure,
-            with James `}
-          </PreLine>
+          <Mover y={[20,-20]}>
+            <Text {...texts.scent} mb={{base: '15px!important', d:'25px!important' }}>On the scent:</Text>
+            <PreLine display={{base: 'block', md: 'none'}} as='h1' {...texts.title}>
+              {`Uncover
+              adventure,
+              with James `}
+            </PreLine>
+            <PreLine display={{base: 'none', md: 'block'}} as='h1' {...texts.title}>
+              {`Uncover adventure,
+              with James `}
+            </PreLine>
+          </Mover>
         </Box>
       </Center>
 

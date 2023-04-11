@@ -7,6 +7,7 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
+import Mover from './util/Mover'
 
 export default function Jar() {
 
@@ -23,8 +24,10 @@ export default function Jar() {
 
         <GridItem>
           <Box pt={{base: '52px'}} pl={{d: '46px'}} maxW={{d: '549px'}}>
-            <Text textStyle='body'>They inevitably left with a memento — a jar of Atkinson’s signature rose-scented pomade or a bottle of fragrant lavender water — and his reputation as a perfumer was sealed. (As for any would-be rivals who contemplated stealing those exquisite recipes, the bear doubled as a firm deterrent.)</Text>
-            <Text textStyle='body'>This would be the first of many trailblazing moves by the erudite businessman, who is now being celebrated with a spirited new fragrance named in his honour. James Eau de Parfum by Atkinsons is perhaps the type of fragrance the young James Atkinson would have crafted were he alive today. Strong in character, James is charming, elegant, and powerful with zesty top notes of clary sage, finger lime and pink peppercorn mellowing into a woody dry-down of vetiver and patchouli.</Text>
+            <Mover y={[10,-15]}>
+              <Text textStyle='body'>They inevitably left with a memento — a jar of Atkinson’s signature rose-scented pomade or a bottle of fragrant lavender water — and his reputation as a perfumer was sealed. (As for any would-be rivals who contemplated stealing those exquisite recipes, the bear doubled as a firm deterrent.)</Text>
+              <Text textStyle='body'>This would be the first of many trailblazing moves by the erudite businessman, who is now being celebrated with a spirited new fragrance named in his honour. James Eau de Parfum by Atkinsons is perhaps the type of fragrance the young James Atkinson would have crafted were he alive today. Strong in character, James is charming, elegant, and powerful with zesty top notes of clary sage, finger lime and pink peppercorn mellowing into a woody dry-down of vetiver and patchouli.</Text>
+            </Mover>
           </Box>
         </GridItem>
       </Grid>
