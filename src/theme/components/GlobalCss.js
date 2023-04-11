@@ -4,6 +4,10 @@ const GlobalCss = () => (
   <Global
     styles={`
 
+    html,
+    body {
+      overscroll-behavior: none;
+    }
     @font-face {
       font-family: 'Fact Expanded';
       src: url('./fonts/Fact-Expanded.woff2') format('woff2'),
