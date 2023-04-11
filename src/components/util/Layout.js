@@ -17,9 +17,11 @@ export default function Layout({children}) {
     <ChakraProvider resetCSS theme={customTheme}>
       <GuideLines />
 
-      <MotionLayout>
-        {children}
-      </MotionLayout>
+      <MastheadProvider>
+        <MotionLayout>
+          {children}
+        </MotionLayout>
+      </MastheadProvider>
 
       <GlobalCss />
     </ChakraProvider>
@@ -80,12 +82,10 @@ const MotionLayout = ({ children }) => {
   const [isDesktop] = useMediaQuery(`(min-width: 1280px)`)
 
   return (
-    <MastheadProvider>
-      <ParallaxProvider>
-        <ScrollerMotion disabled={true}>
-          {children}
-        </ScrollerMotion>
-      </ParallaxProvider>
-    </MastheadProvider>
+    <ParallaxProvider>
+      <ScrollerMotion disabled={true}>
+        {children}
+      </ScrollerMotion>
+    </ParallaxProvider>
   )
 }

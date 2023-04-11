@@ -41,7 +41,7 @@ export default function MastheadProvider({children}) {
 
     return () => isMounted = true;
 
-  }, [config]);
+  }, []);
 
   if(!activateMasthead) return children
 
