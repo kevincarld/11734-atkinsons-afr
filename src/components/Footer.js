@@ -22,7 +22,7 @@ export default function Footer() {
 
       </Container>
 
-      <FeatureFooter href='https://www.atkinsons1799.com/en_eu'/>
+      <FeatureFooter href='https://www.myer.com.au/p/atkinsons-london-1799-james-edp-100ml'/>
     </Box>
   )
 }

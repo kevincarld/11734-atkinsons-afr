@@ -33,7 +33,7 @@ export default function Hero() {
   };
   return (
     <Box pos='relative' pt='54px' mb={{base: '60%', md: '0'}} >
-      <FeatureHeader href='https://www.atkinsons1799.com/en_eu' />
+      <FeatureHeader href='https://www.myer.com.au/p/atkinsons-london-1799-james-edp-100ml' />
 
       <Box pos='relative' transform={{base: 'scale(3.3)', md: 'none'}} transformOrigin={'center'}>
         <BrightCoveVideo
