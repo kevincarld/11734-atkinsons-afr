@@ -12,13 +12,13 @@ export default function FeatureFooter({svg, href, ...rest}) {
       <Text sx={{
         fontSize: {base: '9px'},
         fontFamily: 'Arial',
-        mb: '0px!important',
+        mb: {base: '-10px!important', d:'10px!important'},
         color:'white',
       }}>
         ADVERTISING FEATURE
       </Text>
 
-      <Link maxW={{base: '116px', lg: 'none'}} href={href} target={'_blank'} rel="sponsored" aria-label={`link to ${process.env.brand}`} sx={{'svg': {w:'full'}}}>
+      <Link maxW={{base: '80px', d:'150px'}} href={href} target={'_blank'} rel="sponsored" aria-label={`link to ${process.env.brand}`} sx={{'svg': {w:'full'}}}>
         <svg id="atkinsons-1799-logo-full-footer" width="132" height="84" viewBox="0 0 132 84">
           <defs>
             <clipPath id="clip-pathfooter">
